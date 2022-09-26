@@ -1,7 +1,7 @@
 # Viagem-Interestelar
 Atualizando o projeto ultizando as boas praticas e inserindo as seguintes atualizações:
 -Implementação DOM; <br>
-  uliznado innerText e innerHTML <br>
+  utilizando innerText e innerHTML <br>
 -Mudança de contraste do papel de parede; <br>
 -Inserção de hover nos botões <br>
 -Aumento da fonte das letras  <br>
