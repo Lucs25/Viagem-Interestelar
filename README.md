@@ -1,11 +1,11 @@
 # Viagem-Interestelar
-Atualizando o projeto ulizando as boas praticas e inserindo as seguintes atualizações:
--Implementação DOM;
-  uliznado innerText e innerHTML
--Mudança de contraste do papel de parede;
--Inserção de hover nos botões
--Aumento da fonte das letras
--Inserção do botão de reset no js;
+Atualizando o projeto ultizando as boas praticas e inserindo as seguintes atualizações:
+-Implementação DOM; <br>
+  uliznado innerText e innerHTML <br>
+-Mudança de contraste do papel de parede; <br>
+-Inserção de hover nos botões <br>
+-Aumento da fonte das letras  <br>
+-Inserção do botão de reset no js; <br>
 
 Imagem atual do projeto (exemp2):
 ![image](https://user-images.githubusercontent.com/93219618/192386652-26ac6e69-d1e6-4c40-a6af-8823214174a9.png)
