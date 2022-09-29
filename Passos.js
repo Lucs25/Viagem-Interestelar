@@ -23,7 +23,8 @@ function contar() {
             document.getElementById("contar").style.display = "none"
             for (let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{1F47D}`
-            }	
+            }
+            res.innerHTML += `\u{1F6F8}`
         } else {//contagem regressiva
             logout.style.display = "block"
             document.getElementById("contar").style.display = "none"
@@ -36,18 +37,18 @@ function contar() {
 }
 
 logoutBtn.addEventListener("click", () => {
-    document.getElementById("txi").value =" " ;
+    document.getElementById("txi").value =" ";
     document.getElementById("txf").value =" ";
     document.getElementById("txp").value =" ";
     document.getElementById("res").innerText = "Preparando para contar...";
 
-    logout.style.display = "none"
     document.getElementById("contar").style.display = "block"
+    logout.style.display = "none"
     
 });
 
 /* 
-Outro método para resetar valores - lembrando de adicionar evento onclick="myFunction()" no button logou no html
+Outro método para resetar valores - lembrando de adicionar evento onclick="myFunction()" no button logout no html
 
 function myFunction () {
     document.getElementById("txi").value ="" ;

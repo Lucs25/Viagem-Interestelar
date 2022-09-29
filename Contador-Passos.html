@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de passos</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="Passos.js"></script>
 </head>
 <body>
-    <header>
+    <main>
         <h1>Viagem interestelar!</h1>
-    </header>
-    <section>
-        <div id="dados">
-            <p>Ínicio: <input type="number" name="inicio" id="txi"></p>
-            <p>Fim: <input type="number" name="fim" id="txf"></p>
-            <p>Passo: <input type="number" name="passo" id="txp"></p>
-            <p><input id="contar" type="button" value="Contar" onclick="contar()"></p>
-            <p><button id="logout" type="button" >Limpar</button></p>
-        </div>
-        <div id="res">
-            <p>Preparando para contar...</p>
-        </div>
-    </section>
-    <footer>
+        <section>
+            <div id="dados" class="container">
+                <p>Ínicio: <input type="number" name="inicio" id="txi"></p>
+                <p>Fim: <input type="number" name="fim" id="txf"></p>
+                <p>Passo: <input type="number" name="passo" id="txp"></p>
+                <p>
+                    <input id="contar" type="button" value="Contar" onclick="contar()">
+                    <button id="logout" type="button" >Limpar</button>
+                </p>
+                <div id="res">
+                    <p>Preparando para contar...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
         <p style="color: white">&copy; Production of Lucs S/A</p>
     </footer>
-    <script src="Passos.js"></script>
 </body>
 </html>
