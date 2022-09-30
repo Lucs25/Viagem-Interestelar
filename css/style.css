@@ -9,15 +9,11 @@ body {
     border: none;
     font: 1.125rem Arial, Helvetica, sans-serif;
     width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    height: 100vh;
+
 }
 
-main {/* 
-    height: 91vh; */
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,14 +26,15 @@ main {/*
 
 
 h1 {
+    letter-spacing: 3px;
     text-align: center;
     color: #ffff;
-    margin-bottom: 15px;
+    margin: 15px 0px 15px 0px;
 }
 
-section {
-    background:radial-gradient(rgba(0,0,0,.50),rgba(0,0,0,70%)), url(/Img/fundo-alien.jpg) no-repeat center center;
-    box-shadow: 10px 10px 20px rgb(29, 37, 128), -10px -10px 20px rgb(29, 37, 128);
+section {/* 
+    background:radial-gradient(rgba(0,0,0,.50),rgba(0,0,0,70%)), url(/Img/fundo-alien.jpg) no-repeat center center/100%; */
+    box-shadow: 1px 1px 10px 10px rgb(29, 37, 128), -1px -10px 10px rgb(29, 37, 128);
     width: 30%;
     min-height: 350px;
     color: #fff;
@@ -90,10 +87,172 @@ input {
 }
 
 #footer p{
-    height: 2vh;
-    padding: 20px 0px 5px 0px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-style: italic;
 }
+
+/* Responsividade */
+
+
+@media screen and (max-width: 480px) {
+
+    h1{
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+
+    section{
+        box-shadow: 1px 1px 10px 5px rgb(29, 37, 128), 
+        -1px -5px 5px rgb(29, 37, 128);
+        background: none;
+        font-size: 0.7rem;
+        width: 40%;
+        min-height: 50vh;
+        padding: 0px 0px 3px 0px;
+    }
+
+    div p {
+        margin: 10px 0px 10px 0px;
+    }
+
+
+    input {
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 4vh;
+        margin: 0 auto;
+    }
+
+    #contar {
+        font-size: 0.7rem;
+        align-items: center;
+        width: 25%;
+        height: 4vh;
+        padding: 1px
+    }
+
+    #logout{
+        font-size: 0.7rem;
+        align-items: center;
+        width: 25%;
+        height: 4vh;
+        padding: 1px
+    }
+
+    #res{
+        font-size: 0.7rem;
+        padding: 0px 50px 5px 50px;
+    }
+
+
+    #footer p {
+    padding-top: 35vh;
+    font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 780px) {
+
+    h1{
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    section{
+        box-shadow: 1px 1px 10px 5px rgb(29, 37, 128), 
+        -1px -5px 5px rgb(29, 37, 128);
+        font-size: 0.9rem;
+        width: 35%;
+        min-height: 60vh;
+        padding: 0px 0px 3px 0px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        width: 60%;
+        height: 4vh;
+        margin: 0 auto;
+    }
+
+    #contar {
+        font-size: 0.7rem;
+        align-items: center;
+        width: 25%;
+        height: 5vh;
+        padding: 1px
+    }
+
+    #logout{
+        font-size: 0.7rem;
+        align-items: center;
+        width: 25%;
+        height: 5vh;
+        padding: 1px
+    }
+
+    #res{
+        font-size: 0.9rem;
+        padding: 0px 10px 5px 10px;
+    }
+
+
+    #footer p {
+    padding-top: 25vh;
+    font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 781px) {
+
+    h1{
+        font-size: 2rem;
+        letter-spacing: 0px;
+    }
+
+    section{
+        box-shadow: 1px 1px 10px 10px rgb(29, 37, 128),
+        -1px -10px 10px rgb(29, 37, 128);
+        font-size: 1.3rem;
+        width: 35%;
+        min-height: 60vh;
+        padding: 0px 0px 3px 0px;
+    }
+
+    input {
+        font-size: 1.3rem;
+        width: 50%;
+        height: 5vh;
+        margin: 0 auto;
+    }
+
+    #contar {
+        font-size: 1rem;
+        align-items: center;
+        width: 25%;
+        height: 5vh;
+        padding: 1px
+    }
+
+    #logout{
+        font-size: 1rem;
+        align-items: center;
+        width: 25%;
+        height: 5vh;
+        padding: 1px
+    }
+
+    #res{
+        font-size: 1.3rem;
+    }
+
+
+    #footer p {
+    padding-top: 23vh;
+    font-size: 0.7rem;
+    }
+}
+
